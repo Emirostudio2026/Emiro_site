@@ -1,0 +1,1015 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #222;
+}
+
+/* منوی بالای سایت */
+header {
+    background-color: #111827;
+    color: white;
+    padding: 20px 50px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h2 {
+    margin: 0;
+}
+
+/* لینک‌های منو */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #60a5fa;
+}
+
+/* بخش اصلی */
+main {
+    text-align: center;
+    padding-top: 120px;
+}
+
+h1 {
+    font-size: 40px;
+    color: #2563eb;
+}
+
+p {
+    font-size: 20px;
+    color: #555;
+}
+
+/* دکمه */
+button {
+    margin-top: 20px;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    background-color: #2563eb;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+.services {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 60px;
+    padding: 20px;
+}
+
+.card {
+    background-color: white;
+    width: 220px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card h3 {
+    color: #2563eb;
+}
+
+.card p {
+    font-size: 16px;
+}
+@media (max-width: 700px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    nav a {
+        margin: 0 7px;
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+        max-width: 300px;
+    }
+}
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    max-width: 1000px;
+    margin: 100px auto;
+    padding: 30px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    font-size: 32px;
+    color: #2563eb;
+}
+
+.about-text p {
+    font-size: 18px;
+    line-height: 2;
+    color: #555;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+/* موبایل */
+@media (max-width: 700px) {
+
+    .about {
+        flex-direction: column;
+        margin: 60px auto;
+    }
+
+    .about-text,
+    .about-image {
+        width: 90%;
+    }
+}
+footer {
+    background-color: #111827;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 80px;
+}
+
+footer h3 {
+    font-size: 25px;
+}
+
+footer p {
+    color: #d1d5db;
+}
+
+.footer-links {
+    margin: 25px 0;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+}
+
+.footer-links a:hover {
+    color: #60a5fa;
+}
+
+.copyright {
+    font-size: 14px;
+    margin-top: 30px;
+}
+.contact {
+    max-width: 700px;
+    margin: 100px auto;
+    padding: 30px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 32px;
+    color: #2563eb;
+}
+
+.contact p {
+    color: #666;
+    font-size: 18px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.contact input,
+.contact textarea {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+.contact textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.contact button {
+    align-self: center;
+}
+html {
+    scroll-behavior: smooth;
+}
+.hero {
+    max-width: 1100px;
+    margin: 80px auto;
+    padding: 40px 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h1 {
+    font-size: 45px;
+    line-height: 1.5;
+    color: #111827;
+}
+
+.hero-text p {
+    font-size: 19px;
+    line-height: 2;
+    color: #555;
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+/* موبایل */
+@media (max-width: 700px) {
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        margin: 40px auto;
+    }
+
+    .hero-text h1 {
+        font-size: 32px;
+    }
+
+    .hero-image {
+        width: 90%;
+    }
+}
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 80px 10%;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: center;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 20px;
+}
+/* نسخه موبایل */
+@media (max-width: 768px) {
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 20px;
+        gap: 30px;
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+
+    .hero-text h1 {
+        font-size: 30px;
+        line-height: 1.5;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+        line-height: 1.8;
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+
+    .hero-image img {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 12px 25px;
+    }
+}
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+
+    .hero-image img {
+        width: 90%;
+    }
+}
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 8%;
+    background: #000000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #cccccc;
+}
+.hero {
+    min-height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f8fafc;
+}
+
+.hero-text h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: #111827;
+}
+
+.hero-text p {
+    font-size: 18px;
+    color: #64748b;
+    margin-bottom: 30px;
+}
+
+.hero-text button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.intro-text {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 2;
+    text-align: center;
+    margin: 40px auto;
+}
+/* پس‌زمینه تار هنگام باز شدن پنجره */
+body.services-open::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    background: rgba(25, 35, 50, 0.52);
+    backdrop-filter: blur(7px);
+}
+
+/* پنجره خدمات در حالت عادی مخفی است */
+.services {
+    display: none;
+}
+
+/* پنجره اصلی */
+.services.show-services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+
+    position: fixed;
+    z-index: 1001;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 790px;
+    max-width: calc(100% - 32px);
+    max-height: 85vh;
+    overflow-y: auto;
+    box-sizing: border-box;
+
+    padding: 60px 30px 28px;
+    background: #fff;
+    border: 1px solid #f1f5f9;
+    border-radius: 22px;
+    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.2);
+}
+
+/* کارت‌های خدمات */
+.services.show-services .card {
+    flex: 1 1 170px;
+    min-width: 0;
+    max-width: 225px;
+    box-sizing: border-box;
+    padding: 25px 16px;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #f1f5f9;
+    border-radius: 15px;
+    box-shadow: 0 7px 20px rgba(15, 23, 42, 0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.services.show-services .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(15, 23, 42, 0.13);
+}
+
+.services.show-services .card h3 {
+    color: #2563eb;
+    font-size: 17px;
+    margin-bottom: 12px;
+}
+
+.services.show-services .card p {
+    color: #64748b;
+    font-size: 13px;
+    line-height: 1.9;
+}
+
+/* جمله پایین کارت‌ها */
+.services.show-services .services-hint {
+    flex: 0 0 100%;
+    width: 100%;
+    margin: 0;
+    padding-top: 20px;
+    border-top: 1px solid #f1f5f9;
+    text-align: center;
+    color: #315b9b;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/* دکمه بستن */
+.services.show-services .close-services {
+    position: absolute;
+    top: 15px;
+    left: 18px;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #fb5267, #e11d48);
+    color: #fff;
+    font-size: 24px;
+    line-height: 1;
+    cursor: pointer;
+    box-shadow: 0 5px 14px rgba(225, 29, 72, 0.25);
+    transition: transform 0.25s ease;
+}
+
+.services.show-services .close-services:hover {
+    transform: rotate(90deg);
+}
+
+/* نمایش مناسب در گوشی */
+@media (max-width: 600px) {
+    .services.show-services {
+        gap: 12px;
+        padding: 55px 16px 22px;
+    }
+
+    .services.show-services .card {
+        flex: 1 1 100%;
+        max-width: none;
+    }
+}
+/* پنجره ثبت سفارش */
+.order-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 1003;
+    background: rgba(15, 23, 42, 0.6);
+    backdrop-filter: blur(6px);
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.order-overlay.show-order {
+    display: flex;
+}
+
+.order-box {
+    position: relative;
+    width: 100%;
+    max-width: 460px;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-sizing: border-box;
+    padding: 35px 25px;
+    background: #fff;
+    border-radius: 22px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.order-box h2 {
+    color: #2563eb;
+    margin-bottom: 10px;
+}
+
+.order-box > p {
+    color: #64748b;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.order-close {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    width: 34px;
+    height: 34px;
+    border: none;
+    border-radius: 50%;
+    background: #f43f5e;
+    color: white;
+    font-size: 23px;
+    cursor: pointer;
+}
+
+#orderForm {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 22px;
+}
+
+#orderForm input,
+#orderForm textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 13px 14px;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    font: inherit;
+    font-size: 14px;
+    outline: none;
+}
+
+#orderForm input:focus,
+#orderForm textarea:focus {
+    border-color: #3b82f6;
+}
+
+#orderForm textarea {
+    resize: vertical;
+}
+
+#orderForm button {
+    padding: 13px;
+    border: none;
+    border-radius: 12px;
+    background: #2563eb;
+    color: white;
+    font: inherit;
+    cursor: pointer;
+}
+
+#orderForm button:hover {
+    background: #1d4ed8;
+}
+
+.order-message {
+    color: #15803d;
+    font-size: 14px;
+}
+/* بخش نمونه‌کارهای Emiro */
+.portfolio {
+    padding: 80px 8%;
+    background: #0f172a;
+    color: #ffffff;
+    text-align: center;
+}
+
+.portfolio-heading {
+    margin-bottom: 40px;
+}
+
+.portfolio-heading h2 {
+    font-size: 32px;
+    margin-bottom: 12px;
+    color: #ffffff;
+}
+
+.portfolio-heading p {
+    color: #cbd5e1;
+    font-size: 16px;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.portfolio-card {
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 18px;
+    overflow: hidden;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-8px);
+    border-color: #38bdf8;
+}
+
+.portfolio-image {
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 64px;
+}
+
+.website-image {
+    background: linear-gradient(135deg, #1d4ed8, #7c3aed);
+}
+
+.logo-image {
+    background: linear-gradient(135deg, #be185d, #7c3aed);
+}
+
+.banner-image {
+    background: linear-gradient(135deg, #ea580c, #ca8a04);
+}
+
+.portfolio-card h3 {
+    font-size: 20px;
+    margin: 20px 10px 8px;
+}
+
+.portfolio-card p {
+    color: #cbd5e1;
+    font-size: 14px;
+    margin: 0 10px 24px;
+}
+
+/* نمایش مناسب در موبایل */
+@media (max-width: 768px) {
+    .portfolio {
+        padding: 55px 6%;
+    }
+
+    .portfolio-heading h2 {
+        font-size: 26px;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .portfolio-image {
+        height: 170px;
+    }
+}
+/* پس‌زمینه تار فرم تماس */
+.contact-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* پنجره فرم */
+.contact-modal {
+    position: relative;
+    width: 100%;
+    max-width: 450px;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-sizing: border-box;
+    background: #fff;
+    color: #222;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.3);
+}
+
+/* دکمه بستن */
+.close-contact {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    border: none;
+    background: transparent;
+    color: #333;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+/* فیلدهای فرم */
+.contact-modal input,
+.contact-modal textarea {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 12px 0;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 15px;
+}
+
+.contact-modal textarea {
+    min-height: 110px;
+    resize: vertical;
+}
+
+.contact-modal form button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #222;
+    color: white;
+    font-family: inherit;
+    font-size: 16px;
+    cursor: pointer;
+}
+/* پنجره درباره ما */
+.about-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.about-modal {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    background: #fff;
+    color: #222;
+    padding: 35px 25px;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.3);
+    animation: aboutAppear 0.3s ease;
+}
+
+.about-modal h2 {
+    margin-bottom: 18px;
+    color: #6c4cff;
+}
+
+.about-modal p {
+    line-height: 2;
+    font-size: 16px;
+}
+
+.close-about {
+    position: absolute;
+    top: 10px;
+    left: 12px;
+    border: none;
+    background: transparent;
+    color: #333;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+@keyframes aboutAppear {
+    from {
+        opacity: 0;
+        transform: translateY(15px) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+.about-overlay {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    box-sizing: border-box;
+    align-items: flex-start;
+}
+
+.about-modal {
+    position: relative;
+    margin: auto;
+    max-height: calc(100vh - 40px);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    flex-shrink: 0;
+}
+/* تنظیمات پایه برای نمایش در موبایل */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+/* بهینه‌سازی سایت Emiro برای موبایل */
+@media (max-width: 768px) {
+
+    .site-header {
+        padding: 12px 16px;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .nav-menu {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .nav-menu a {
+        font-size: 14px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 24px;
+        padding: 30px 16px;
+    }
+
+    .hero-text,
+    .hero-image {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 27px;
+        line-height: 1.8;
+    }
+
+    .hero p {
+        font-size: 15px;
+        line-height: 1.9;
+    }
+
+    .hero-image img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .portfolio,
+    .services {
+        padding: 30px 16px;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .portfolio-card,
+    .card {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .intro-text {
+        padding: 0 16px;
+        line-height: 2;
+        text-align: center;
+    }
+
+    footer {
+        padding: 25px 16px;
+        text-align: center;
+    }
+
+}

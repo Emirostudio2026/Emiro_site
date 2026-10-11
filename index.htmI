@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سایت من</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+    <div class="logo">Emiro</div>
+
+
+    <nav class="nav-menu" id="navMenu">
+        <a href="#home">خانه</a>
+       <a href="#about" onclick="openAbout(); return false;">درباره ما</a>
+        <a href="#services" onclick="openServices(); return false;">خدمات</a>
+        <a href="#contact" onclick="openContact(); return false;">تماس با ما</a>
+    </nav>
+</header>
+
+
+    <main id="home">
+
+    <section class="hero">
+    <div class="hero-text">
+        <h1>ایده‌های شما، شروع یک اتفاق بزرگ</h1>
+        <p>اینجا جاییه که ایده‌های شما به واقعیت تبدیل می‌شن.</p>
+        <button id="startBtn">🚀 شروع کنیم</button>
+    </div>
+
+    <div class="hero-image">
+        <img src="hero.png.png" alt="تصویر اصلی سایت">
+    </div>
+</section>
+
+        <p class="intro-text">ما به شما کمک می‌کنیم تا با طراحی سایت، لوگو و بنر، حضور حرفه‌ای‌تری در دنیای دیجیتال داشته باشید.</p>
+
+    </div>
+
+    <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=800&q=80" alt="طراحی و کار با کامپیوتر">
+    </div>
+
+</section>
+<section class="portfolio" id="portfolio">
+
+    <div class="portfolio-heading">
+        <h2>نمونه‌کارهای ما ✨</h2>
+        <p>ایده‌ها را به طرح‌های جذاب تبدیل می‌کنیم.</p>
+    </div>
+
+    <div class="portfolio-grid">
+
+        <div class="portfolio-card">
+            <div class="portfolio-image website-image">
+                <span>🌐</span>
+            </div>
+            <h3>طراحی سایت</h3>
+            <p>سایت‌های مدرن و کاربردی</p>
+        </div>
+
+        <div class="portfolio-card">
+            <div class="portfolio-image logo-image">
+                <span>🎨</span>
+            </div>
+            <h3>طراحی لوگو</h3>
+            <p>هویت بصری خاص برای برندها</p>
+        </div>
+
+        <div class="portfolio-card">
+            <div class="portfolio-image banner-image">
+                <span>🖼️</span>
+            </div>
+            <h3>طراحی بنر</h3>
+            <p>طرح‌های تبلیغاتی جذاب</p>
+        </div>
+
+    </div>
+
+</section>
+
+    <section class="services" id="services">
+
+    <button class="close-services" id="closeServices">×</button>
+
+    <div class="card" onclick="openService('طراحی سایت')">
+    <h3>طراحی سایت 🌐</h3>
+    <p>طراحی سایت‌های مدرن و زیبا</p>
+</div>
+
+   <div class="card" onclick="openService('طراحی لوگو')">
+    <h3>طراحی لوگو 🎨</h3>
+    <p>طراحی لوگو برای برندها و کسب‌وکارها</p>
+</div>
+
+    <div class="card" onclick="openService('طراحی بنر')">
+    <h3>طراحی بنر 🖼</h3>
+    <p>طراحی بنر تبلیغاتی حرفه‌ای</p>
+</div>
+    <p class="services-hint">ایده‌ات رو انتخاب کن، ما بهش جان می‌دیم ✨</p>
+
+</section>
+
+
+    
+
+<div class="contact-overlay" id="contact">
+    <div class="contact-modal">
+
+        <button type="button" class="close-contact"
+                onclick="closeContact()">×</button>
+
+        <h2>تماس با ما 📩</h2>
+
+        <p>برای ارتباط با ما فرم زیر را پر کنید.</p>
+
+        <form>
+            <input type="text" placeholder="نام شما" required>
+
+            <input type="email" placeholder="ایمیل شما" required>
+
+            <textarea placeholder="پیام شما" required></textarea>
+
+            <button type="submit">ارسال پیام 🚀</button>
+        </form>
+
+    </div>
+</div>
+<div class="about-overlay" id="aboutModal">
+    <div class="about-modal">
+
+        <button type="button" class="close-about" onclick="closeAbout()">×</button>
+
+        <h2>درباره Emiro ✨</h2>
+
+        <p>
+            به Emiro خوش آمدید؛ جایی برای تبدیل ایده‌های شما به یک حضور حرفه‌ای در دنیای دیجیتال.
+        </p>
+
+        <div id="moreAboutText" style="display: none; text-align: right;">
+
+            <h3>داستان ما 🚀</h3>
+            <p>
+                Emiro با هدف کمک به افراد، کسب‌وکارها و برندها برای ارائه بهتر ایده‌هایشان شکل گرفته است.
+                ما باور داریم که هر ایده ارزش دیده‌شدن دارد و طراحی مناسب می‌تواند به آن کمک کند تا تأثیرگذارتر باشد.
+            </p>
+
+            <h3>خدمات ما 💻</h3>
+            <p>
+                <strong>طراحی سایت:</strong>
+                طراحی صفحات مدرن، زیبا و کاربردی متناسب با نیاز و هویت کسب‌وکار شما.
+            </p>
+            <p>
+                <strong>طراحی لوگو:</strong>
+                خلق هویت بصری متمایز برای معرفی بهتر برند شما.
+            </p>
+            <p>
+                <strong>طراحی بنر:</strong>
+                آماده‌سازی طرح‌های تبلیغاتی جذاب برای معرفی خدمات، محصولات و کمپین‌های شما.
+            </p>
+
+            <h3>هدف ما 🎯</h3>
+            <p>
+                هدف ما ارائه طرح‌هایی خلاقانه، منظم و متناسب با نیاز هر مشتری است؛
+                تا بتوانید ایده‌هایتان را با ظاهری حرفه‌ای‌تر به مخاطبان معرفی کنید.
+            </p>
+
+            <h3>همراه شما هستیم 🤝</h3>
+            <p>
+                هر پروژه با شناخت نیازها و انتظارات شما شروع می‌شود.
+                اگر ایده‌ای دارید یا می‌خواهید کسب‌وکار خود را بهتر معرفی کنید،
+                خوشحال می‌شویم درباره پروژه‌تان با شما گفت‌وگو کنیم.
+            </p>
+
+        </div>
+
+        <button type="button" id="moreAboutBtn" onclick="toggleAboutText()">
+            بیشتر بدانید
+        </button>
+
+    </div>
+</div>
+
+</main>
+<!-- پنجره ثبت سفارش -->
+<div class="order-overlay" id="orderOverlay">
+    <div class="order-box">
+
+        <button class="order-close" id="orderClose" type="button">×</button>
+
+        <h2 id="orderTitle">ثبت سفارش</h2>
+        <p>چند مورد رو پر کن تا بهتر بتونیم کمکت کنیم.</p>
+
+        <form id="orderForm">
+            <input
+                type="text"
+                id="customerName"
+                placeholder="نام شما"
+                required
+            >
+            <input
+    type="tel"
+    id="customerPhone"
+    placeholder="شماره تماس یا واتساپ شما"
+    required
+>
+
+            <input
+                type="text"
+                id="projectName"
+                placeholder="نام برند یا پروژه"
+                required
+            >
+
+            <textarea
+                id="projectDetails"
+                placeholder="توضیحات پروژه و چیزی که مدنظرت هست..."
+                rows="4"
+                required
+            ></textarea>
+            <div id="websiteFields" style="display: none;">
+
+    <select id="websiteType">
+        <option value="">نوع سایت را انتخاب کن</option>
+        <option value="فروشگاهی">فروشگاهی</option>
+        <option value="شرکتی">شرکتی</option>
+        <option value="شخصی">شخصی</option>
+        <option value="وبلاگ">وبلاگ</option>
+        <option value="سایر">سایر</option>
+    </select>
+
+    <input
+        type="text"
+        id="websiteFeatures"
+        placeholder="امکانات موردنیاز سایت"
+    >
+
+</div>
+
+<div id="logoFields" style="display: none;">
+
+    <select id="logoType">
+        <option value="">سبک لوگو را انتخاب کن</option>
+        <option value="مینیمال">مینیمال</option>
+        <option value="تایپوگرافی">تایپوگرافی</option>
+        <option value="ترکیبی">ترکیبی (متن و نماد)</option>
+        <option value="لوکس">لوکس</option>
+        <option value="سایر">سایر</option>
+    </select>
+
+    <input
+        type="text"
+        id="logoColors"
+        placeholder="رنگ‌های دلخواه لوگو"
+    >
+
+</div>
+
+            <button type="submit">ثبت درخواست 🚀</button>
+        </form>
+
+        <p id="orderMessage" class="order-message"></p>
+
+    </div>
+</div>
+    
+    <footer>
+
+    <h3>سایت من</h3>
+
+    <p>طراحی شده با ❤️ برای یادگیری و پیشرفت</p>
+
+    <div class="footer-links">
+        <a href="#">اینستاگرام</a>
+        <a href="#">تلگرام</a>
+        <a href="#">تماس با ما</a>
+    </div>
+
+    <p class="copyright">
+        © 2026 تمامی حقوق محفوظ است.
+    </p>
+
+</footer>
+<script>
+const startBtn = document.getElementById("startBtn");
+const services = document.getElementById("services");
+const closeServices = document.getElementById("closeServices");
+
+startBtn.addEventListener("click", function () {
+    services.classList.add("show-services");
+    document.body.classList.add("services-open");
+});
+
+closeServices.addEventListener("click", function () {
+    services.classList.remove("show-services");
+    document.body.classList.remove("services-open");
+});
+const orderOverlay = document.getElementById("orderOverlay");
+const orderTitle = document.getElementById("orderTitle");
+const orderClose = document.getElementById("orderClose");
+const orderForm = document.getElementById("orderForm");
+const orderMessage = document.getElementById("orderMessage");
+
+function openService(serviceName) {
+    orderTitle.textContent = "سفارش " + serviceName;
+    orderMessage.textContent = "";
+    orderForm.reset();
+
+    document.getElementById("websiteFields").style.display =
+        serviceName === "طراحی سایت" ? "block" : "none";
+
+    document.getElementById("logoFields").style.display =
+        serviceName === "طراحی لوگو" ? "block" : "none";
+
+    orderOverlay.classList.add("show-order");
+}
+
+orderClose.addEventListener("click", function () {
+    orderOverlay.classList.remove("show-order");
+});
+
+orderOverlay.addEventListener("click", function (event) {
+    if (event.target === orderOverlay) {
+        orderOverlay.classList.remove("show-order");
+    }
+});
+
+orderForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const customerName =
+        document.getElementById("customerName").value.trim();
+
+    const customerPhone =
+        document.getElementById("customerPhone").value.trim();
+
+    const projectName =
+        document.getElementById("projectName").value.trim();
+
+    const projectDetails =
+        document.getElementById("projectDetails").value.trim();
+
+    let extraDetails = "";
+
+    if (orderTitle.textContent.includes("طراحی سایت")) {
+        extraDetails =
+            "\nنوع سایت: " +
+            document.getElementById("websiteType").value +
+            "\nامکانات موردنیاز: " +
+            document.getElementById("websiteFeatures").value;
+    }
+
+    if (orderTitle.textContent.includes("طراحی لوگو")) {
+        extraDetails =
+            "\nسبک لوگو: " +
+            document.getElementById("logoType").value +
+            "\nرنگ‌های دلخواه: " +
+            document.getElementById("logoColors").value;
+    }
+
+    const orderInfo =
+        "سلام! یک سفارش جدید از سایت Emiro دارم 🌐" +
+        "\n\nنوع سفارش: " + orderTitle.textContent +
+        "\nنام مشتری: " + customerName +
+        "\nشماره تماس مشتری: " + customerPhone +
+        "\nنام برند یا پروژه: " + projectName +
+        "\nتوضیحات: " + projectDetails +
+        extraDetails;
+
+    const whatsappNumber = "989016753986";
+
+    const whatsappURL =
+        "https://wa.me/" + whatsappNumber +
+        "?text=" + encodeURIComponent(orderInfo);
+
+    window.open(whatsappURL, "_blank");
+
+    orderMessage.textContent =
+        "واتساپ باز می‌شود؛ برای ارسال سفارش، دکمه ارسال را بزنید.";
+});
+
+const contactModal = document.getElementById('contact');
+
+function openContact() {
+    contactModal.style.display = 'flex';
+}
+
+function closeContact() {
+    contactModal.style.display = 'none';
+}
+
+contactModal.addEventListener('click', function(event) {
+    if (event.target === contactModal) {
+        closeContact();
+    }
+});
+
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') {
+        closeContact();
+    }
+});
+
+document.querySelectorAll('a[href="#contact"]').forEach(function(link) {
+    link.addEventListener('click', function(event) {
+        event.preventDefault();
+        openContact();
+    });
+});
+const aboutModal = document.getElementById('aboutModal');
+
+function openAbout() {
+    aboutModal.style.display = 'flex';
+}
+
+function closeAbout() {
+    aboutModal.style.display = 'none';
+}
+function toggleAboutText() {
+    const moreText = document.getElementById("moreAboutText");
+    const moreBtn = document.getElementById("moreAboutBtn");
+
+    if (moreText.style.display === "none") {
+        moreText.style.display = "block";
+        moreBtn.textContent = "نمایش کمتر ▲";
+    } else {
+        moreText.style.display = "none";
+        moreBtn.textContent = "بیشتر بدانید";
+    }
+}
+function openServices() {
+    services.classList.add("show-services");
+    document.body.classList.add("services-open");
+}
+</script>
+</body>
+</html>
